@@ -1,0 +1,18 @@
+---
+description: Use English for project artifacts and Chinese for developer communication
+alwaysApply: true
+---
+
+# Language And Communication Rule
+
+## Output Language Policy
+
+- Use **English** for all project-facing artifacts:
+  - Source code, identifiers, comments, commit messages, docs, tests, and config.
+- Use **Chinese** when communicating directly with the developer in chat:
+  - Explanations, progress updates, questions, and final responses.
+
+## Exceptions
+
+- Preserve existing language when editing quoted text or third-party content.
+- If the developer explicitly asks for another language, follow that request for that response.

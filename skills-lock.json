@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "skills": {
+    "clawhub": {
+      "source": "smithery.ai",
+      "sourceType": "well-known",
+      "computedHash": "39ecd276b845daa26201ee6d4e230958bf6307941cec7b134a00f2def1b20c27"
+    },
+    "skill-creator": {
+      "source": "smithery.ai",
+      "sourceType": "well-known",
+      "computedHash": "98b5840a1b6b175f923d50014aedc56e7b35aeaa4d10309b4ffff267cfdab3af"
+    },
+    "smithery-ai-cli": {
+      "source": "smithery.ai",
+      "sourceType": "well-known",
+      "computedHash": "dc17f090c975afe1d96a25dbe843fc9c978e96d5699eed1bb7c12b411e10b830"
+    }
+  }
+}
