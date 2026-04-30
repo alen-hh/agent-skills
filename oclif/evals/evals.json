@@ -1,0 +1,23 @@
+{
+  "skill_name": "oclif",
+  "evals": [
+    {
+      "id": 0,
+      "prompt": "Create a new oclif CLI project named 'my-cli' and add a 'hello' command to it.",
+      "expected_output": "A new oclif project named my-cli with a hello command generated.",
+      "files": []
+    },
+    {
+      "id": 1,
+      "prompt": "Create a new oclif CLI project named 'deploy-cli' and add a 'deploy' command that takes a '--force' boolean flag.",
+      "expected_output": "A new oclif project named deploy-cli with a deploy command containing a force boolean flag.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Create a new oclif CLI project named 'hook-cli' and add a 'prerun' hook that checks if the user is logged in.",
+      "expected_output": "A new oclif project named hook-cli with a prerun hook.",
+      "files": []
+    }
+  ]
+}
