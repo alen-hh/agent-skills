@@ -1,0 +1,23 @@
+{
+  "skill_name": "reddit-marketing",
+  "evals": [
+    {
+      "id": 0,
+      "prompt": "I run a B2B SaaS company that helps small businesses manage their inventory. A user in r/smallbusiness just asked 'How do you guys keep track of stock without losing your minds? Excel is killing me.' Draft a Reddit comment for me to respond to this.",
+      "expected_output": "A helpful, non-salesy comment that provides genuine advice first, discloses the brand affiliation, and subtly mentions the SaaS tool as an option, following the 90/10 rule.",
+      "files": []
+    },
+    {
+      "id": 1,
+      "prompt": "My startup just launched a new AI-powered video editing app. I want to do an AMA with our CEO on r/VideoEditing. Write the introduction post for the AMA.",
+      "expected_output": "An AMA introduction that establishes the CEO's credibility, provides proof, sets clear boundaries for the discussion, and avoids sounding like a corporate press release.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "We are setting up our first Reddit Ad campaign for our ergonomic office chairs. What are the top 3 best practices we should follow for the ad creative and setup?",
+      "expected_output": "A concise summary of Reddit ad best practices, including turning off comments, using Redditisms, and optimizing for mobile, referencing the ads-guide.",
+      "files": []
+    }
+  ]
+}
