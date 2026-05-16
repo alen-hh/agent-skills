@@ -1,0 +1,17 @@
+{
+  "skill_name": "dankoe-style-writing",
+  "evals": [
+    {
+      "id": 0,
+      "prompt": "Write a short-form social media post (for X/Twitter) about why traditional time management and the 40-hour workweek is a trap. Encourage people to focus on leverage and deep work instead.",
+      "expected_output": "A short, punchy post with frequent line breaks. It should start with a contrarian hook about the 40-hour workweek, use terms like 'leverage' or 'the matrix', and end with a strong statement about building assets over trading time.",
+      "files": []
+    },
+    {
+      "id": 1,
+      "prompt": "Draft the outline and the first two sections of a long-form newsletter. The topic is 'Why AI won't replace creators who have taste.' Use Dan Koe's formatting, including Roman numerals for sections and a philosophical quote.",
+      "expected_output": "A newsletter draft featuring a bold title, short paragraphs, Roman numeral headers (e.g., '### I - The Psychology of Taste'), and an italicized quote. It should contrast 'slop' with 'signal' and emphasize human specific knowledge.",
+      "files": []
+    }
+  ]
+}
