@@ -49,7 +49,7 @@ agent-skills/
 └── reddit-marketing/
 ```
 
-A skill directory is named in kebab-case and contains at least `SKILL.md`. Optional extras: `references/` for long docs, `evals/` for test prompts, and `scripts/` for helpers.
+A skill directory is named in kebab-case and contains at least `SKILL.md`. Optional extras: `references/` for long docs and `scripts/` for helpers. Do not commit `evals/` in this catalog.
 
 Do not nest new skills under `skills/`, `.cursor/skills/`, or any other subdirectory.
 

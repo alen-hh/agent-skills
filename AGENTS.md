@@ -59,9 +59,6 @@ Each published skill is a **root-level directory** named after the skill. There 
 <skill-name>/                 # must be at the repository root
 ├── SKILL.md                  # required
 ├── references/               # optional, loaded only when SKILL.md points to it
-├── evals/
-│   ├── evals.json            # task evals (prompts + expected outcomes)
-│   └── trigger-eval.json     # description-trigger evals (optional)
 ├── examples.md               # optional
 └── scripts/                  # optional deterministic helpers
 ```
@@ -118,14 +115,9 @@ npx skills find <query>
 
 ## Testing Instructions
 
-There is no repo-wide test runner. Testing is per-skill, via `skill-creator`.
+There is no repo-wide test runner. Validate frontmatter with `quick_validate.py`. Do **not** commit `evals/` into published skill directories in this catalog.
 
-- Task evals live at `<skill>/evals/evals.json`. Follow `skill-creator`'s schema (`skill_name`, `evals[]` with `id`, `prompt`, `expected_output`, `files`).
-- Trigger evals (should / should-not fire) live at `<skill>/evals/trigger-eval.json`.
-- Run evals through `skill-creator` (with-skill vs baseline subagents, grader, eval viewer). Do not invent a parallel harness.
-- Eval workspaces belong **beside** the skill directory as `<skill-name>-workspace/`, not inside the skill folder. Do not commit workspace output unless the developer asks.
-- `evals/` is excluded from packaged `.skill` files; keep evals in git as the skill's test suite.
-- After changing a skill, add or update evals for the behavior you changed.
+If you run `skill-creator` evals locally, keep them out of git: put workspaces beside the skill as `<skill-name>-workspace/`, and do not add `evals/evals.json` or `evals/trigger-eval.json` to the skill folder unless the developer asks.
 
 Validate a skill directory:
 
@@ -153,8 +145,7 @@ Replace `bootstrap-5` with the skill you edited. Fix reported frontmatter issues
 - Before considering a skill change complete:
   - `quick_validate.py` on the touched skill directory
   - `README.md` catalog is accurate
-  - evals added or updated when the skill's behavior changed
-- Do not commit `.DS_Store`, eval workspaces, or packaged `.skill` binaries unless requested.
+- Do not commit `.DS_Store`, `evals/`, eval workspaces, or packaged `.skill` binaries unless requested.
 
 ## Additional Notes
 
