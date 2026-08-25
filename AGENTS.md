@@ -29,12 +29,13 @@ If a listed skill is missing from the current runtime, install it (for example `
 
 ## Skill Placement (Required)
 
-A finished skill **must** live at this repository's **root**, as a sibling of `README.md` and `AGENTS.md` — the same layout as the skills already in the catalog (`bootstrap-5/`, `dankoe-style-writing/`, `dsh-plugin/`, `oclif/`, `reddit-marketing/`).
+A finished skill **must** live at this repository's **root**, as a sibling of `README.md` and `AGENTS.md` — the same layout as the skills already in the catalog (`arxiv/`, `bootstrap-5/`, `dankoe-style-writing/`, `dsh-plugin/`, `oclif/`, `reddit-marketing/`).
 
 ```
 agent-skills/
 ├── AGENTS.md
 ├── README.md
+├── arxiv/SKILL.md
 ├── bootstrap-5/SKILL.md
 ├── dankoe-style-writing/SKILL.md
 ├── dsh-plugin/SKILL.md
@@ -65,6 +66,7 @@ Each published skill is a **root-level directory** named after the skill. There 
 
 Current catalog (keep `README.md` in sync when this set changes):
 
+- `arxiv` — arXiv paper lookup
 - `bootstrap-5` — Bootstrap 5 UI
 - `dankoe-style-writing` — writing style
 - `dsh-plugin` — DeepSeek Harness plugin development

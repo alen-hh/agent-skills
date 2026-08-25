@@ -8,6 +8,7 @@ Coding agents should read [`AGENTS.md`](AGENTS.md) before creating or editing sk
 
 | Skill | What it is for | Install |
 | ----- | -------------- | ------- |
+| [arxiv](arxiv/SKILL.md) | Query arXiv papers by id, author, title, category, or date via the official API | `npx skills add alen-hh/agent-skills@arxiv` |
 | [bootstrap-5](bootstrap-5/SKILL.md) | Bootstrap 5 UI: utility-first layout, grid, and components across HTML, Vue, React, and similar stacks | `npx skills add alen-hh/agent-skills@bootstrap-5` |
 | [dankoe-style-writing](dankoe-style-writing/SKILL.md) | Essays, newsletters, and social posts in Dan Koe's style | `npx skills add alen-hh/agent-skills@dankoe-style-writing` |
 | [dsh-plugin](dsh-plugin/SKILL.md) | DeepSeek Harness (dsh) plugins with Cordis: tools, services, LLM adapters, and bundles | `npx skills add alen-hh/agent-skills@dsh-plugin` |
@@ -19,6 +20,7 @@ Coding agents should read [`AGENTS.md`](AGENTS.md) before creating or editing sk
 Use the [Skills CLI](https://skills.sh/) to install a skill into your coding agents:
 
 ```bash
+npx skills add alen-hh/agent-skills@arxiv
 npx skills add alen-hh/agent-skills@bootstrap-5
 npx skills add alen-hh/agent-skills@dankoe-style-writing
 npx skills add alen-hh/agent-skills@dsh-plugin
@@ -42,6 +44,7 @@ Every published skill lives at the **repository root**, next to this README:
 agent-skills/
 ├── AGENTS.md
 ├── README.md
+├── arxiv/
 ├── bootstrap-5/
 ├── dankoe-style-writing/
 ├── dsh-plugin/
