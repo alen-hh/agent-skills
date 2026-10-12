@@ -39,6 +39,7 @@ agent-skills/
 ├── bootstrap-5/SKILL.md
 ├── dankoe-style-writing/SKILL.md
 ├── dsh-plugin/SKILL.md
+├── html-prototype/SKILL.md
 ├── oclif/SKILL.md
 ├── reddit-marketing/SKILL.md
 └── <new-skill-name>/SKILL.md    # add new skills here, at the root
@@ -70,6 +71,7 @@ Current catalog (keep `README.md` in sync when this set changes):
 - `bootstrap-5` — Bootstrap 5 UI
 - `dankoe-style-writing` — writing style
 - `dsh-plugin` — DeepSeek Harness plugin development
+- `html-prototype` — minimal HTML product prototypes
 - `oclif` — oclif CLI framework
 - `reddit-marketing` — Reddit marketing
 

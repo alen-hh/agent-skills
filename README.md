@@ -12,6 +12,7 @@ Coding agents should read [`AGENTS.md`](AGENTS.md) before creating or editing sk
 | [bootstrap-5](bootstrap-5/SKILL.md) | Bootstrap 5 UI: utility-first layout, grid, and components across HTML, Vue, React, and similar stacks | `npx skills add alen-hh/agent-skills@bootstrap-5` |
 | [dankoe-style-writing](dankoe-style-writing/SKILL.md) | Essays, newsletters, and social posts in Dan Koe's style | `npx skills add alen-hh/agent-skills@dankoe-style-writing` |
 | [dsh-plugin](dsh-plugin/SKILL.md) | DeepSeek Harness (dsh) plugins with Cordis: tools, services, LLM adapters, and bundles | `npx skills add alen-hh/agent-skills@dsh-plugin` |
+| [html-prototype](html-prototype/SKILL.md) | Minimal HTML prototypes of product screens for product-manager review | `npx skills add alen-hh/agent-skills@html-prototype` |
 | [oclif](oclif/SKILL.md) | Create and maintain CLIs with the oclif framework | `npx skills add alen-hh/agent-skills@oclif` |
 | [reddit-marketing](reddit-marketing/SKILL.md) | Reddit marketing: communities, organic posts, AMAs, and ads | `npx skills add alen-hh/agent-skills@reddit-marketing` |
 
@@ -24,6 +25,7 @@ npx skills add alen-hh/agent-skills@arxiv
 npx skills add alen-hh/agent-skills@bootstrap-5
 npx skills add alen-hh/agent-skills@dankoe-style-writing
 npx skills add alen-hh/agent-skills@dsh-plugin
+npx skills add alen-hh/agent-skills@html-prototype
 npx skills add alen-hh/agent-skills@oclif
 npx skills add alen-hh/agent-skills@reddit-marketing
 ```
@@ -48,6 +50,7 @@ agent-skills/
 ├── bootstrap-5/
 ├── dankoe-style-writing/
 ├── dsh-plugin/
+├── html-prototype/
 ├── oclif/
 └── reddit-marketing/
 ```
