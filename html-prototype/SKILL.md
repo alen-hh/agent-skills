@@ -1,22 +1,38 @@
 ---
 name: html-prototype
 description: >-
-  Builds a minimal static HTML prototype of a product screen for product-manager
-  review. Use whenever someone asks for a prototype, wireframe, mockup, HTML
-  mock, 原型, or 线框图, or describes a product screen they want to see quickly
-  — settings, lists, dashboards, forms, dialogs, empty states — even if they
-  never say HTML. The page is one self-contained file, content max-width 1440px
-  and vertically centered, black white and gray only plus success, info,
+  Builds a one-pass static HTML prototype of a desktop product screen for
+  product-manager review. Use whenever someone asks for a prototype, wireframe,
+  mockup, HTML mock, 原型, or 线框图, or describes a product screen they want
+  to see quickly — settings, lists, dashboards, forms, dialogs, empty states —
+  even if they never say HTML. Desktop web only, with no responsive, mobile,
+  or tablet layout. The page is one self-contained file, content width
+  1440px and vertically centered, black white and gray only plus success, info,
   warning, and danger status colors, and standard actions are icons rather than
   words. Skip this for production apps, component libraries, Bootstrap styling,
-  and branded marketing sites.
+  branded marketing sites, and responsive or mobile UI.
 ---
 
 # HTML Prototype
 
-Build a static product-screen prototype a product manager can open and review. The page should be understandable in one glance and contain nothing that is only there to look finished.
+Build one static desktop screen a product manager can open and review. The useful version is the first complete screen, not a polished one. Spend the time on the content of the screen. A second layout, a toolchain, or a browser session delays the review.
 
 Copy [assets/page.html](assets/page.html) as the document. Keep its shell, tokens, and the rule that disables animation. Put screen-specific CSS in the same `<style>` block. Icons come from Lucide. Read [references/icons.md](references/icons.md) and copy those SVGs. Do not draw a new icon when Lucide already has one.
+
+## Speed
+
+A reviewer is waiting on the screen, so work in one pass:
+
+- Copy the template, fill in the screen, run the check below, and hand the file over.
+- Do not install packages, start a dev server, scaffold a project, or pull in a component library.
+- If the brief is thin, pick one concrete product, state that assumption in the reply, and keep going. Ask only when you cannot tell which screen to build or where the file should go.
+- Leave the template shell alone. Screen CSS is additive.
+
+## Desktop only
+
+Reviewers open this on a desktop browser. A phone or tablet layout is a different screen, and building it slows down the one they asked for.
+
+Lay the screen out inside the template's 1440px column. Do not add `@media` or `@container` queries, a collapsing sidebar, a hamburger that exists only for a narrow window, stacked mobile tables, or a second file for a smaller viewport. Do not emulate a device or check a narrow window. The template's `min(100%, 1440px)` is only a cap on that desktop column. It is not a responsive system, and it is not a reason to design for more than one width.
 
 ## Output
 
@@ -78,10 +94,14 @@ The prototype shows the screen. It does not demonstrate polish.
 - No chart library. If a chart is required, draw one gray SVG series. Use a status color only to mark the point the screen is about.
 - No emoji, stock photos, or generated illustrations. An avatar is the user icon or initials in a gray circle.
 
-## Before handing it over
+## Check
 
-- [ ] Opened from the template, still max-width 1440px, still vertically centered without clipping a tall page
-- [ ] Only the tokens above; status color appears only on status icons (and a destructive confirm button, if there is one)
-- [ ] Standard actions are Lucide icons, copied from the catalog, with `aria-label` and `title`
-- [ ] No animation, no remote assets, no framework
-- [ ] Copy matches the user's language and the brief's real content
+The deliverable is a static file. Opening it in a browser, driving a browser, or screenshotting it does not catch more than reading the file, and it is the slow part. Skip Browser Use, the IDE browser, computer use, Playwright, Puppeteer, Chrome DevTools, Lighthouse, device emulation, and page screenshots. A general habit of verifying web apps in a browser does not apply here. This is not an application.
+
+Glance through the file once: copy matches the brief and the user's language, standard actions are Lucide icons with `aria-label` and `title`, and status color is only on status icons (or a destructive confirm button). Then run the checker that ships with this skill, from this skill's directory or by absolute path:
+
+```bash
+python3 scripts/check_page.py path/to/screen.html
+```
+
+It confirms the file is still the desktop template: no remote assets, no `@media` or `@container`, and the 1440px column, vertical-centering grid, and disabled animation are still there. If it fails, fix the file and run it once more. Then stop. That glance plus the script is the whole test.
